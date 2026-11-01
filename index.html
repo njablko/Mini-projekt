@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='pl'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Formularz kontaktowy</title>
+    <link rel='stylesheet' href='main.css'>
+</head>
+<body>
+    <h2>Formularz kontaktowy</h2>
+    <form id="kontakt" class="formularz" action="zapis.php" method="post" novalidate>
+
+        <label for="imie">Imię:</label>
+        <input id="imie" name="imie" type="text" placeholder="Wpisz tutaj...">
+        <span id="error-imie" class="blad"></span>
+
+        <label for="email">E-mail:</label>
+        <input id="email" name="email" type="email" placeholder="Wpisz tutaj...">
+        <span id="error-email" class="blad"></span>
+    
+        <label for="wiadomosc">Wiadomość:</label>
+        <textarea id="wiadomosc" name="wiadomosc" minlength="10" maxlength="200" placeholder="Wpisz tutaj..."></textarea>
+        <span id="error-wiadomosc" class="blad"></span>
+    
+        <button type="submit">Wyślij</button>
+
+        <p id="wynik"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
